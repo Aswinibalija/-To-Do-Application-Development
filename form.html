@@ -1,0 +1,13 @@
+<div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">Name</label>
+        <input type="text" name="name" value="{{ task.tname }}">
+
+        <label for="">Description</label>
+        <input type="text" name="desc" value="{{ task.tdesc }}">
+
+        <input type="submit">
+        
+    </form>
+</div>
